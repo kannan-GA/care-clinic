@@ -247,7 +247,7 @@ const TestimonialCarousel = () => {
     //   </Modal>
     // </div>
 
-    <div className="relative bg-yellow-300 p-8 rounded-lg mx-auto min-h-screen flex flex-col items-center justify-center ">
+    <div className="relative bg-outcome p-8 rounded-lg mx-auto min-h-screen flex flex-col items-center justify-center ">
       <h2 className="text-2xl font-bold mb-4 text-center">Testimonial</h2>
 
       {/* Testimonial Content */}

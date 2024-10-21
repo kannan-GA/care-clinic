@@ -125,7 +125,7 @@ const TreatmentCard = ({ treatment }) => {
   };
 
   return (
-    <div className="bg-white shadow-md rounded-md overflow-hidden flex flex-col h-full">
+    <div className="bg-gray-100 shadow-md rounded-md overflow-hidden flex flex-col h-full p-2 rounded-lg">
       <img
         src={treatment.image}
         alt={treatment.title}

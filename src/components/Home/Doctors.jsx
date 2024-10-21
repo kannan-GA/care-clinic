@@ -83,7 +83,7 @@ const Doctors = () => {
       <h2 className=" text-base lg:text-4xl font-semibold mb-6">
         Meet Our Dedicated Team
       </h2>
-      <p className="mb-12 text-xs px-2">
+      <p className="mb-12 text-xs lg:text-base px-2">
         It is a long established fact that a reader will be distracted...
       </p>
       <div className="flex flex-wrap justify-center gap-8 px-2 ">
