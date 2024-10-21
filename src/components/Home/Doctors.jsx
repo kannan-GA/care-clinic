@@ -59,22 +59,22 @@ const Doctors = () => {
     {
       name: "Dr. John Doe",
       specialization: "Cardiologist",
-      image: "/public/assets/doctor-with-his-arms-crossed-white-background.jpg",
+      image: "/assets/doctor-with-his-arms-crossed-white-background.jpg",
     },
     {
       name: "Dr. Jane Smith",
       specialization: "Pediatrician",
-      image: "/public/assets/doctor-with-his-arms-crossed-white-background.jpg",
+      image: "/assets/doctor-with-his-arms-crossed-white-background.jpg",
     },
     {
       name: "Dr. Alice Johnson",
       specialization: "Dermatologist",
-      image: "/public/assets/doctor-with-his-arms-crossed-white-background.jpg",
+      image: "/assets/doctor-with-his-arms-crossed-white-background.jpg",
     },
     {
       name: "Dr. Bob Williams",
       specialization: "Orthopedic",
-      image: "/public/assets/doctor-with-his-arms-crossed-white-background.jpg",
+      image: "/assets/doctor-with-his-arms-crossed-white-background.jpg",
     },
   ];
 
