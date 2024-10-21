@@ -3,7 +3,7 @@ import axios from "axios";
 import io from "socket.io-client";
 
 // Connect to the Socket.IO server
-const socket = io("http://localhost:5005");
+const socket = io("https://care-clinic-express.vercel.app");
 
 const Schedules = () => {
   const [doctors, setDoctors] = useState([]);
@@ -12,7 +12,9 @@ const Schedules = () => {
     // Fetch initial data
     const fetchDoctors = async () => {
       try {
-        const response = await axios.get("http://localhost:5005/doctors");
+        const response = await axios.get(
+          "https://care-clinic-express.vercel.app/doctors"
+        );
         setDoctors(response.data);
       } catch (error) {
         console.error("Error fetching doctor data:", error);

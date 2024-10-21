@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_URL = "http://localhost:5005/doctors"; // Update this URL to your server's address
+const API_URL = "https://care-clinic-express.vercel.app/doctors"; // Update this URL to your server's address
 
 function AdminPage() {
   const [doctors, setDoctors] = useState([]);
