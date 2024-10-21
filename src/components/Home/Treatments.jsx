@@ -22,17 +22,17 @@ const Treatments = () => {
           {
             title: "Laser Treatment",
             description: "At our skin clinic, we understand the importance...",
-            image: "/public/assets/surgery-1807541_1920.jpg",
+            image: "/surgery-1807541_1920.jpg",
           },
           {
             title: "Hair Transplantation",
             description: "At our skin clinic, we understand...",
-            image: "/public/assets/surgery-1807541_1920.jpg",
+            image: "assets/surgery-1807541_1920.jpg",
           },
           {
             title: "Hydrafacial",
             description: "At our skin clinic, we understand...",
-            image: "/public/assets/surgery-1807541_1920.jpg",
+            image: "assets/surgery-1807541_1920.jpg",
           },
         ].map((treatment, index) => (
           <div

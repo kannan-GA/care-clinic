@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Logo */}
           <div className=" flex justify-center  gap-4  md:justify-start  items-center  md:gap-3">
             <img
-              src="../../public/assets/Website_logo 1.png"
+              src="assets/Website_logo 1.png"
               alt="Care Clinic Logo"
               className="w-8  cursor-pointer "
               onClick={() => {
@@ -106,28 +106,28 @@ const Footer = () => {
             <div className="flex space-x-4 justify-center md:felx md:justify-start">
               <a to="#" className="text-white hover:text-gray-400">
                 <img
-                  src="../../public/assets/Group.png"
+                  src="assets/Group.png"
                   alt="Instagram"
                   className="w-6 h-6"
                 />
               </a>
               <a to="#" className="text-white hover:text-gray-400">
                 <img
-                  src="../../public/assets/Group 30.png"
+                  src="assets/Group 30.png"
                   alt="Facebook"
                   className="w-6 h-6"
                 />
               </a>
               <a to="#" className="text-white hover:text-gray-400">
                 <img
-                  src="../../public/assets/Group31.png"
+                  src="assets/Group31.png"
                   alt="Telegram"
                   className="w-6 h-6"
                 />
               </a>
               <a to="#" className="text-white hover:text-gray-400">
                 <img
-                  src="../../public/assets/Group32.png"
+                  src="assets/Group32.png"
                   alt="WhatsApp"
                   className="w-6 h-6"
                 />

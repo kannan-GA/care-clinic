@@ -5,16 +5,16 @@ import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 const Outcome = () => {
   // Images array
   const images = [
-    "/public/assets/Group 54.png",
-    "/public/assets/Group 54.png",
-    "/public/assets/Group 54.png",
-    "/public/assets/contact-us.jpg",
-    "/public/assets/Group 54.png",
-    "/public/assets/Group 54.png",
-    "/public/assets/Group 54.png",
-    "/public/assets/Group 54.png",
-    "/public/assets/Group 54.png",
-    "/public/assets/Group 54.png",
+    "assets/Group 54.png",
+    "assets/Group 54.png",
+    "assets/Group 54.png",
+    "assets/contact-us.jpg",
+    "assets/Group 54.png",
+    "assets/Group 54.png",
+    "assets/Group 54.png",
+    "assets/Group 54.png",
+    "assets/Group 54.png",
+    "assets/Group 54.png",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
