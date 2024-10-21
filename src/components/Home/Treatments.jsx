@@ -37,20 +37,23 @@ const Treatments = () => {
         ].map((treatment, index) => (
           <div
             key={index}
-            className="bg-white p-8 rounded-lg shadow-lg flex flex-col  gap-5 w-full sm:w-1/2 md:w-1/4"
+            className="bg-white p-8 rounded-lg shadow-lg flex flex-col gap-5 w-full sm:w-1/2 md:w-1/4 h-full"
+            style={{ minHeight: "400px" }} // Set a fixed min height
           >
             <img
               src={treatment.image}
               alt={treatment.title}
               className="w-full h-auto rounded-md"
             />
-            <h3 className="text-xs  font-bold mb-4">{treatment.title}</h3>
-            <p className="text-sm md:text-sm">{treatment.description}</p>
+            <h3 className="text-xs font-bold mb-4">{treatment.title}</h3>
+            <p className="text-sm md:text-sm flex-grow">
+              {treatment.description}
+            </p>
 
             <div className="mt-auto w-full">
               <Link
                 to={"/appointment"}
-                className="text-[8px] sm:text-[8px] md:text-[8px] lg:text-[12px] xl:text-lg  bg-blue-800 text-white uppercase px-4 py-2 rounded-lg tracking-wider w-full text-center"
+                className="text-[8px] sm:text-[8px] md:text-[8px] lg:text-[12px] xl:text-lg bg-blue-800 text-white uppercase px-4 py-2 rounded-lg tracking-wider w-full text-center"
               >
                 Book Appointment
               </Link>

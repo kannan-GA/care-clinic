@@ -251,7 +251,7 @@ const TestimonialCarousel = () => {
       <h2 className="text-2xl font-bold mb-4 text-center">Testimonial</h2>
 
       {/* Testimonial Content */}
-      <div className="flex justify-center w-full max-w-lg ">
+      <div className="flex justify-center w-full max-w-4xl  ">
         <div className="bg-white p-6 shadow-lg rounded-lg h-64 flex flex-col justify-between items-center overflow-hidden w-full">
           <div>
             <div className="flex items-center justify-between mb-4 w-full gap-2">

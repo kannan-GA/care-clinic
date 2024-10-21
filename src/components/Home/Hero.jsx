@@ -22,13 +22,10 @@ const Hero = () => {
           Our Commitment to Care
         </h1>
         <p className=" text-sm ssm:text-base sm:text-base md:text-base lg:text-base line-clamp-3">
-          We embrace technology to deliver and improve quality care We embrace
-          technology to deliver and improve quality care We embrace technology
-          to deliver and improve quality care We embrace technology to deliver
-          and improve quality care We embrace technology to deliver and improve
-          quality care We embrace technology to deliver and improve quality care
-          We embrace technology to deliver and improve quality care We embrace
-          technology to deliver and improve quality care v
+          At Care Clinic, we are committed to providing exceptional healthcare
+          services that focus on your overall well-being. Our clinic is equipped
+          with the latest medical technologies and staffed by highly qualified
+          professionals dedicated to ensuring your health and comfort.
         </p>
         <button className="bg-yellow-400 text-blue-900 font-bold text-xs sm:text-base py-2 px-3 rounded hover:bg-yellow-300">
           Know more →
