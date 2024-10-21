@@ -293,7 +293,7 @@ const ContactForm = () => {
         {/* Optional Image */}
         <div className="hidden lg:block lg:w-1/2 absolute -right-40 -top-10">
           <img
-            src="/public/assets/contact.png"
+            src="assets/contact.png"
             alt="Background"
             className="rounded-lg w-[60%] h-[80%] "
           />

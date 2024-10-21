@@ -22,7 +22,7 @@ const Treatments = () => {
           {
             title: "Laser Treatment",
             description: "At our skin clinic, we understand the importance...",
-            image: "/surgery-1807541_1920.jpg",
+            image: "assets/surgery-1807541_1920.jpg",
           },
           {
             title: "Hair Transplantation",

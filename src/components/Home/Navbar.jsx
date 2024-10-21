@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <img
             className="w-[20%] cursor-pointer"
-            src="../../public/assets/Website_logo 1.png"
+            src="assets/Website_logo 1.png"
             onClick={() => {
               navigate("/");
             }}
