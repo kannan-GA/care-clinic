@@ -1,3 +1,5 @@
+//
+
 import React, { useEffect, useState } from "react";
 
 const API_URL = "https://care-clinic-express.vercel.app/doctors"; // Update this URL to your server's address
@@ -28,11 +30,8 @@ function AdminPage() {
           ? {
               ...doctor,
               availability: {
-                morning:
-                  time === "morning" ? !doctor.availability.morning : false,
-                noon: time === "noon" ? !doctor.availability.noon : false,
-                evening:
-                  time === "evening" ? !doctor.availability.evening : false,
+                ...doctor.availability,
+                [time]: !doctor.availability[time],
               },
             }
           : doctor
@@ -49,21 +48,22 @@ function AdminPage() {
     );
   };
 
-  // Save the updated doctors data to the server
-  const saveToServer = async (doctorId) => {
-    const doctorToUpdate = doctors.find((doctor) => doctor._id === doctorId);
-
+  // Save all updated doctors data to the server
+  const saveAllToServer = async () => {
     try {
-      await fetch(`${API_URL}/${doctorId}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(doctorToUpdate),
-      });
-      alert("Updated successfully!");
+      for (const doctor of doctors) {
+        await fetch(`${API_URL}/${doctor._id}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(doctor),
+        });
+      }
+      alert("All changes saved successfully!");
     } catch (error) {
-      console.error("Error updating doctors data:", error);
+      console.error("Error saving doctors data:", error);
+      alert("Error saving changes.");
     }
   };
 
@@ -75,7 +75,7 @@ function AdminPage() {
           <li key={doctor._id} className="mb-4">
             <h2 className="font-semibold">{doctor.name}</h2>
             <div className="flex gap-4">
-              {["morning", "noon", "evening"].map((time) => (
+              {["morning", "evening"].map((time) => (
                 <label key={time} className="flex items-center gap-2">
                   <input
                     type="checkbox"
@@ -99,15 +99,16 @@ function AdminPage() {
                 className="border border-gray-300 rounded p-1"
               />
             </div>
-            <button
-              onClick={() => saveToServer(doctor._id)}
-              className="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
-            >
-              Save Changes
-            </button>
           </li>
         ))}
       </ul>
+      {/* Single Save Changes button */}
+      <button
+        onClick={saveAllToServer}
+        className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
+      >
+        Save Changes
+      </button>
     </div>
   );
 }

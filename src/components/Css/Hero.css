@@ -1,0 +1,7 @@
+.carousel .control-dots .dot {
+  @apply bg-slate-300; /* Change this to any Tailwind color class */
+}
+
+.carousel .control-dots .dot.selected {
+  @apply bg-red-700; /* Use any Tailwind class */
+}
