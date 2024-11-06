@@ -13,7 +13,7 @@ export default {
         form: "url('/public/assets/laboratory-563423_1920.jpg')",
       },
       fontFamily: {
-        rubik: ['"Rubik"', "sans-serif"],
+        rubik: ["Rubik", "sans-serif"],
       },
       screens: {
         xssm: "390px",

@@ -3,5 +3,5 @@
 }
 
 .carousel .control-dots .dot.selected {
-  @apply bg-red-700; /* Use any Tailwind class */
+  @apply bg-blue-700; /* Use any Tailwind class */
 }
